@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ludo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header-row">
+  <h1><span class="dice-emoji">&#127922;</span> Ludo</h1>
+</div>
+
+<div class="app">
+  <div class="board-wrap">
+    <div class="grid">
+
+      <div class="yard yard-red">
+        <div class="yard-slot"></div><div class="yard-slot"></div>
+        <div class="yard-slot"></div><div class="yard-slot"></div>
+      </div>
+      <div class="yard yard-green">
+        <div class="yard-slot"></div><div class="yard-slot"></div>
+        <div class="yard-slot"></div><div class="yard-slot"></div>
+      </div>
+      <div class="yard yard-yellow">
+        <div class="yard-slot"></div><div class="yard-slot"></div>
+        <div class="yard-slot"></div><div class="yard-slot"></div>
+      </div>
+      <div class="yard yard-blue">
+        <div class="yard-slot"></div><div class="yard-slot"></div>
+        <div class="yard-slot"></div><div class="yard-slot"></div>
+      </div>
+
+      <div class="cell" style="grid-row:1 / 2; grid-column:7 / 8;"></div>
+      <div class="cell" style="grid-row:1 / 2; grid-column:8 / 9;"></div>
+      <div class="cell" style="grid-row:1 / 2; grid-column:9 / 10;"></div>
+      <div class="cell" style="grid-row:2 / 3; grid-column:7 / 8;"></div>
+      <div class="cell home-green" style="grid-row:2 / 3; grid-column:8 / 9;"></div>
+      <div class="cell safe" style="grid-row:2 / 3; grid-column:9 / 10;"></div>
+      <div class="cell safe" style="grid-row:3 / 4; grid-column:7 / 8;"></div>
+      <div class="cell home-green" style="grid-row:3 / 4; grid-column:8 / 9;"></div>
+      <div class="cell" style="grid-row:3 / 4; grid-column:9 / 10;"></div>
+      <div class="cell" style="grid-row:4 / 5; grid-column:7 / 8;"></div>
+      <div class="cell home-green" style="grid-row:4 / 5; grid-column:8 / 9;"></div>
+      <div class="cell" style="grid-row:4 / 5; grid-column:9 / 10;"></div>
+      <div class="cell" style="grid-row:5 / 6; grid-column:7 / 8;"></div>
+      <div class="cell home-green" style="grid-row:5 / 6; grid-column:8 / 9;"></div>
+      <div class="cell" style="grid-row:5 / 6; grid-column:9 / 10;"></div>
+      <div class="cell" style="grid-row:6 / 7; grid-column:7 / 8;"></div>
+      <div class="cell home-green" style="grid-row:6 / 7; grid-column:8 / 9;"></div>
+      <div class="cell" style="grid-row:6 / 7; grid-column:9 / 10;"></div>
+      <div class="cell" style="grid-row:7 / 8; grid-column:1 / 2;"></div>
+      <div class="cell safe" style="grid-row:7 / 8; grid-column:2 / 3;"></div>
+      <div class="cell" style="grid-row:7 / 8; grid-column:3 / 4;"></div>
+      <div class="cell" style="grid-row:7 / 8; grid-column:4 / 5;"></div>
+      <div class="cell" style="grid-row:7 / 8; grid-column:5 / 6;"></div>
+      <div class="cell" style="grid-row:7 / 8; grid-column:6 / 7;"></div>
+      <div class="cell" style="grid-row:7 / 8; grid-column:10 / 11;"></div>
+      <div class="cell" style="grid-row:7 / 8; grid-column:11 / 12;"></div>
+      <div class="cell" style="grid-row:7 / 8; grid-column:12 / 13;"></div>
+      <div class="cell safe" style="grid-row:7 / 8; grid-column:13 / 14;"></div>
+      <div class="cell" style="grid-row:7 / 8; grid-column:14 / 15;"></div>
+      <div class="cell" style="grid-row:7 / 8; grid-column:15 / 16;"></div>
+      <div class="cell" style="grid-row:8 / 9; grid-column:1 / 2;"></div>
+      <div class="cell home-red" style="grid-row:8 / 9; grid-column:2 / 3;"></div>
+      <div class="cell home-red" style="grid-row:8 / 9; grid-column:3 / 4;"></div>
+      <div class="cell home-red" style="grid-row:8 / 9; grid-column:4 / 5;"></div>
+      <div class="cell home-red" style="grid-row:8 / 9; grid-column:5 / 6;"></div>
+      <div class="cell home-red" style="grid-row:8 / 9; grid-column:6 / 7;"></div>
+      <div class="cell home-blue" style="grid-row:8 / 9; grid-column:10 / 11;"></div>
+      <div class="cell home-blue" style="grid-row:8 / 9; grid-column:11 / 12;"></div>
+      <div class="cell home-blue" style="grid-row:8 / 9; grid-column:12 / 13;"></div>
+      <div class="cell home-blue" style="grid-row:8 / 9; grid-column:13 / 14;"></div>
+      <div class="cell home-blue" style="grid-row:8 / 9; grid-column:14 / 15;"></div>
+      <div class="cell" style="grid-row:8 / 9; grid-column:15 / 16;"></div>
+      <div class="cell" style="grid-row:9 / 10; grid-column:1 / 2;"></div>
+      <div class="cell" style="grid-row:9 / 10; grid-column:2 / 3;"></div>
+      <div class="cell safe" style="grid-row:9 / 10; grid-column:3 / 4;"></div>
+      <div class="cell" style="grid-row:9 / 10; grid-column:4 / 5;"></div>
+      <div class="cell" style="grid-row:9 / 10; grid-column:5 / 6;"></div>
+      <div class="cell" style="grid-row:9 / 10; grid-column:6 / 7;"></div>
+      <div class="cell" style="grid-row:9 / 10; grid-column:10 / 11;"></div>
+      <div class="cell" style="grid-row:9 / 10; grid-column:11 / 12;"></div>
+      <div class="cell" style="grid-row:9 / 10; grid-column:12 / 13;"></div>
+      <div class="cell" style="grid-row:9 / 10; grid-column:13 / 14;"></div>
+      <div class="cell safe" style="grid-row:9 / 10; grid-column:14 / 15;"></div>
+      <div class="cell" style="grid-row:9 / 10; grid-column:15 / 16;"></div>
+      <div class="cell" style="grid-row:10 / 11; grid-column:7 / 8;"></div>
+      <div class="cell home-yellow" style="grid-row:10 / 11; grid-column:8 / 9;"></div>
+      <div class="cell" style="grid-row:10 / 11; grid-column:9 / 10;"></div>
+      <div class="cell" style="grid-row:11 / 12; grid-column:7 / 8;"></div>
+      <div class="cell home-yellow" style="grid-row:11 / 12; grid-column:8 / 9;"></div>
+      <div class="cell" style="grid-row:11 / 12; grid-column:9 / 10;"></div>
+      <div class="cell" style="grid-row:12 / 13; grid-column:7 / 8;"></div>
+      <div class="cell home-yellow" style="grid-row:12 / 13; grid-column:8 / 9;"></div>
+      <div class="cell" style="grid-row:12 / 13; grid-column:9 / 10;"></div>
+      <div class="cell" style="grid-row:13 / 14; grid-column:7 / 8;"></div>
+      <div class="cell home-yellow" style="grid-row:13 / 14; grid-column:8 / 9;"></div>
+      <div class="cell safe" style="grid-row:13 / 14; grid-column:9 / 10;"></div>
+      <div class="cell safe" style="grid-row:14 / 15; grid-column:7 / 8;"></div>
+      <div class="cell home-yellow" style="grid-row:14 / 15; grid-column:8 / 9;"></div>
+      <div class="cell" style="grid-row:14 / 15; grid-column:9 / 10;"></div>
+      <div class="cell" style="grid-row:15 / 16; grid-column:7 / 8;"></div>
+      <div class="cell" style="grid-row:15 / 16; grid-column:8 / 9;"></div>
+      <div class="cell" style="grid-row:15 / 16; grid-column:9 / 10;"></div>
+
+      <div class="center">
+        <div class="tri tri-red"></div>
+        <div class="tri tri-green"></div>
+        <div class="tri tri-blue"></div>
+        <div class="tri tri-yellow"></div>
+      </div>
+
+    </div>
+
+    <div class="token-layer">
+      <div class="token red" style="grid-row:2 / 3; grid-column:2 / 3;"></div>
+      <div class="token red" style="grid-row:2 / 3; grid-column:5 / 6;"></div>
+      <div class="token red" style="grid-row:5 / 6; grid-column:2 / 3;"></div>
+      <div class="token red" style="grid-row:5 / 6; grid-column:5 / 6;"></div>
+      <div class="token green" style="grid-row:2 / 3; grid-column:11 / 12;"></div>
+      <div class="token green" style="grid-row:2 / 3; grid-column:14 / 15;"></div>
+      <div class="token green" style="grid-row:5 / 6; grid-column:11 / 12;"></div>
+      <div class="token green" style="grid-row:5 / 6; grid-column:14 / 15;"></div>
+      <div class="token blue" style="grid-row:11 / 12; grid-column:11 / 12;"></div>
+      <div class="token blue" style="grid-row:11 / 12; grid-column:14 / 15;"></div>
+      <div class="token blue" style="grid-row:14 / 15; grid-column:11 / 12;"></div>
+      <div class="token blue" style="grid-row:14 / 15; grid-column:14 / 15;"></div>
+      <div class="token yellow" style="grid-row:11 / 12; grid-column:2 / 3;"></div>
+      <div class="token yellow" style="grid-row:11 / 12; grid-column:5 / 6;"></div>
+      <div class="token yellow" style="grid-row:14 / 15; grid-column:2 / 3;"></div>
+      <div class="token yellow" style="grid-row:14 / 15; grid-column:5 / 6;"></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="turn-card">
+      <div class="swatch red"></div>
+      <div>
+        <div class="turn-label">Red's turn</div>
+        <div class="turn-sub">Roll to begin</div>
+      </div>
+    </div>
+
+    <div class="dice-area">
+      <div class="die">
+        <div class="pip"></div><div class="pip"></div><div class="pip"></div>
+        <div class="pip"></div><div class="pip on"></div><div class="pip"></div>
+        <div class="pip"></div><div class="pip"></div><div class="pip"></div>
+      </div>
+      <button>Roll dice</button>
+    </div>
+
+    <div class="scores">
+      <div class="score-row">
+        <div class="swatch red"></div>Red
+        <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+      </div>
+      <div class="score-row">
+        <div class="swatch green"></div>Green
+        <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+      </div>
+      <div class="score-row">
+        <div class="swatch yellow"></div>Yellow
+        <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+      </div>
+      <div class="score-row">
+        <div class="swatch blue"></div>Blue
+        <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
